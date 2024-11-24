@@ -6,12 +6,22 @@ export default defineConfig({
   define: { 'process.env': {} },
   build: {
     minify: 'esbuild',
+    sourcemap: 'inline',
     lib: {
       entry: resolve(__dirname, './src/index.ts'),
       name: 'aieditor',
       // fileName: (format) => `index.${format}.js`,
-      fileName: `index`,
+      fileName: 'index',
       formats: ['es', 'cjs']
+    },
+    rollupOptions: {
+      external: ['vue', 'vue-router'],
+      output: {
+        globals: {
+          vue: 'Vue'
+        },
+        exports: 'named'
+      }
     }
   },
   plugins: [

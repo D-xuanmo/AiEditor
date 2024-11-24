@@ -8,7 +8,6 @@ import {
 } from '@tiptap/core'
 
 import { Header } from '../components/Header.ts'
-import { Footer } from '../components/Footer.ts'
 
 import { getExtensions } from './getExtensions.ts'
 
@@ -35,7 +34,6 @@ import { htmlToMd, mdToHtml } from '../util/mdUtil.ts'
 import { AiEditorEventListener, AiEditorOptions } from './types.ts'
 
 defineCustomElement('aie-header', Header)
-defineCustomElement('aie-footer', Footer)
 
 const defaultOptions: Partial<AiEditorOptions> = {
   theme: 'light',
@@ -84,8 +82,6 @@ export class AiEditor {
   header!: Header
 
   mainEl!: HTMLDivElement
-
-  footer!: Footer
 
   options: AiEditorOptions
 
@@ -157,10 +153,6 @@ export class AiEditor {
     this.header = new Header()
     this.eventComponents.push(this.header)
 
-    this.footer = new Footer()
-    this.footer.initDraggable(this.options.draggable)
-    this.eventComponents.push(this.footer)
-
     let content = this.options.content
     if (content && this.options.contentIsMarkdown) {
       content = mdToHtml(content)
@@ -216,9 +208,6 @@ export class AiEditor {
 
     const _main = this.container.querySelector('.aie-container-main') || this.container
     _main.appendChild(this.mainEl)
-
-    const _footer = this.container.querySelector('.aie-container-footer') || this.container
-    _footer.appendChild(this.footer)
 
     if (this.options.ai) {
       AiModelManager.init(this.innerEditor, this.options.ai)
@@ -438,7 +427,6 @@ export class AiEditor {
     if (this.customLayout) {
       this.header.remove()
       this.mainEl.remove()
-      this.footer.remove()
     } else {
       this.container.remove()
     }

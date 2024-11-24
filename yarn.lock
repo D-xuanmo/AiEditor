@@ -550,7 +550,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/core@npm:^2.10.0, @tiptap/core@npm:^2.10.1, @tiptap/core@npm:^2.10.2":
+"@tiptap/core@npm:^2.10.1, @tiptap/core@npm:^2.10.2":
   version: 2.10.2
   resolution: "@tiptap/core@npm:2.10.2"
   peerDependencies:
@@ -577,7 +577,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-bubble-menu@npm:^2.10.0, @tiptap/extension-bubble-menu@npm:^2.10.1":
+"@tiptap/extension-bubble-menu@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-bubble-menu@npm:2.10.2"
   dependencies:
@@ -598,7 +598,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-character-count@npm:^2.10.0, @tiptap/extension-character-count@npm:^2.10.1":
+"@tiptap/extension-character-count@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-character-count@npm:2.10.2"
   peerDependencies:
@@ -608,7 +608,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-code-block-lowlight@npm:^2.10.0, @tiptap/extension-code-block-lowlight@npm:^2.10.1":
+"@tiptap/extension-code-block-lowlight@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-code-block-lowlight@npm:2.10.2"
   peerDependencies:
@@ -640,7 +640,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-color@npm:^2.10.0, @tiptap/extension-color@npm:^2.10.1":
+"@tiptap/extension-color@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-color@npm:2.10.2"
   peerDependencies:
@@ -669,7 +669,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-font-family@npm:^2.10.0, @tiptap/extension-font-family@npm:^2.10.1":
+"@tiptap/extension-font-family@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-font-family@npm:2.10.2"
   peerDependencies:
@@ -679,7 +679,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-gapcursor@npm:^2.10.0, @tiptap/extension-gapcursor@npm:^2.10.1, @tiptap/extension-gapcursor@npm:^2.10.2":
+"@tiptap/extension-gapcursor@npm:^2.10.1, @tiptap/extension-gapcursor@npm:^2.10.2":
   version: 2.10.2
   resolution: "@tiptap/extension-gapcursor@npm:2.10.2"
   peerDependencies:
@@ -698,7 +698,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-heading@npm:^2.10.0, @tiptap/extension-heading@npm:^2.10.1, @tiptap/extension-heading@npm:^2.10.2":
+"@tiptap/extension-heading@npm:^2.10.1, @tiptap/extension-heading@npm:^2.10.2":
   version: 2.10.2
   resolution: "@tiptap/extension-heading@npm:2.10.2"
   peerDependencies:
@@ -707,7 +707,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-highlight@npm:^2.10.0, @tiptap/extension-highlight@npm:^2.10.1":
+"@tiptap/extension-highlight@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-highlight@npm:2.10.2"
   peerDependencies:
@@ -736,7 +736,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-image@npm:^2.10.0, @tiptap/extension-image@npm:^2.10.1":
+"@tiptap/extension-image@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-image@npm:2.10.2"
   peerDependencies:
@@ -754,7 +754,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-link@npm:^2.10.0, @tiptap/extension-link@npm:^2.10.1":
+"@tiptap/extension-link@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-link@npm:2.10.2"
   dependencies:
@@ -775,7 +775,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-mention@npm:^2.10.0, @tiptap/extension-mention@npm:^2.10.1":
+"@tiptap/extension-mention@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-mention@npm:2.10.2"
   peerDependencies:
@@ -804,7 +804,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-placeholder@npm:^2.10.0, @tiptap/extension-placeholder@npm:^2.10.1":
+"@tiptap/extension-placeholder@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-placeholder@npm:2.10.2"
   peerDependencies:
@@ -823,7 +823,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-subscript@npm:^2.10.0, @tiptap/extension-subscript@npm:^2.10.1":
+"@tiptap/extension-subscript@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-subscript@npm:2.10.2"
   peerDependencies:
@@ -832,7 +832,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-superscript@npm:^2.10.0, @tiptap/extension-superscript@npm:^2.10.1":
+"@tiptap/extension-superscript@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-superscript@npm:2.10.2"
   peerDependencies:
@@ -841,7 +841,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-table-cell@npm:^2.10.0, @tiptap/extension-table-cell@npm:^2.10.1":
+"@tiptap/extension-table-cell@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-table-cell@npm:2.10.2"
   peerDependencies:
@@ -850,7 +850,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-table-header@npm:^2.10.0, @tiptap/extension-table-header@npm:^2.10.1":
+"@tiptap/extension-table-header@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-table-header@npm:2.10.2"
   peerDependencies:
@@ -859,7 +859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-table-row@npm:^2.10.0, @tiptap/extension-table-row@npm:^2.10.1":
+"@tiptap/extension-table-row@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-table-row@npm:2.10.2"
   peerDependencies:
@@ -868,7 +868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-table@npm:^2.10.0, @tiptap/extension-table@npm:^2.10.1":
+"@tiptap/extension-table@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-table@npm:2.10.2"
   peerDependencies:
@@ -878,7 +878,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-task-item@npm:^2.10.0, @tiptap/extension-task-item@npm:^2.10.1":
+"@tiptap/extension-task-item@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-task-item@npm:2.10.2"
   peerDependencies:
@@ -888,7 +888,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-task-list@npm:^2.10.0, @tiptap/extension-task-list@npm:^2.10.1":
+"@tiptap/extension-task-list@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-task-list@npm:2.10.2"
   peerDependencies:
@@ -897,7 +897,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-text-align@npm:^2.10.0, @tiptap/extension-text-align@npm:^2.10.1":
+"@tiptap/extension-text-align@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-text-align@npm:2.10.2"
   peerDependencies:
@@ -906,7 +906,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-text-style@npm:^2.10.0, @tiptap/extension-text-style@npm:^2.10.1, @tiptap/extension-text-style@npm:^2.10.2":
+"@tiptap/extension-text-style@npm:^2.10.1, @tiptap/extension-text-style@npm:^2.10.2":
   version: 2.10.2
   resolution: "@tiptap/extension-text-style@npm:2.10.2"
   peerDependencies:
@@ -924,7 +924,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/extension-underline@npm:^2.10.0, @tiptap/extension-underline@npm:^2.10.1":
+"@tiptap/extension-underline@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/extension-underline@npm:2.10.2"
   peerDependencies:
@@ -933,7 +933,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/pm@npm:^2.10.0, @tiptap/pm@npm:^2.10.1, @tiptap/pm@npm:^2.10.2":
+"@tiptap/pm@npm:^2.10.1, @tiptap/pm@npm:^2.10.2":
   version: 2.10.2
   resolution: "@tiptap/pm@npm:2.10.2"
   dependencies:
@@ -959,7 +959,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/starter-kit@npm:^2.10.0, @tiptap/starter-kit@npm:^2.10.1":
+"@tiptap/starter-kit@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/starter-kit@npm:2.10.2"
   dependencies:
@@ -988,7 +988,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tiptap/suggestion@npm:^2.10.0, @tiptap/suggestion@npm:^2.10.1":
+"@tiptap/suggestion@npm:^2.10.1":
   version: 2.10.2
   resolution: "@tiptap/suggestion@npm:2.10.2"
   peerDependencies:
@@ -1244,7 +1244,6 @@ __metadata:
     "@tiptap/suggestion": ^2.10.1
     "@types/node": ^20.9.0
     "@xuanmo/prettier-config": ^0.0.2
-    aieditor: ^1.2.7
     crypto-js: ^4.2.0
     eslint-config-xuanmo: ^0.0.2
     fetch-event-stream: ^0.1.5
@@ -1315,49 +1314,6 @@ __metadata:
     clean-stack: ^2.0.0
     indent-string: ^4.0.0
   checksum: 1101a33f21baa27a2fa8e04b698271e64616b886795fd43c31068c07533c7b3facfcaf4e9e0cab3624bd88f729a592f1c901a1a229c9e490eafce411a8644b79
-  languageName: node
-  linkType: hard
-
-"aieditor@npm:^1.2.7":
-  version: 1.2.7
-  resolution: "aieditor@npm:1.2.7"
-  dependencies:
-    "@tiptap/core": ^2.10.0
-    "@tiptap/extension-bubble-menu": ^2.10.0
-    "@tiptap/extension-character-count": ^2.10.0
-    "@tiptap/extension-code-block-lowlight": ^2.10.0
-    "@tiptap/extension-color": ^2.10.0
-    "@tiptap/extension-font-family": ^2.10.0
-    "@tiptap/extension-gapcursor": ^2.10.0
-    "@tiptap/extension-heading": ^2.10.0
-    "@tiptap/extension-highlight": ^2.10.0
-    "@tiptap/extension-image": ^2.10.0
-    "@tiptap/extension-link": ^2.10.0
-    "@tiptap/extension-mention": ^2.10.0
-    "@tiptap/extension-placeholder": ^2.10.0
-    "@tiptap/extension-subscript": ^2.10.0
-    "@tiptap/extension-superscript": ^2.10.0
-    "@tiptap/extension-table": ^2.10.0
-    "@tiptap/extension-table-cell": ^2.10.0
-    "@tiptap/extension-table-header": ^2.10.0
-    "@tiptap/extension-table-row": ^2.10.0
-    "@tiptap/extension-task-item": ^2.10.0
-    "@tiptap/extension-task-list": ^2.10.0
-    "@tiptap/extension-text-align": ^2.10.0
-    "@tiptap/extension-text-style": ^2.10.0
-    "@tiptap/extension-underline": ^2.10.0
-    "@tiptap/pm": ^2.10.0
-    "@tiptap/starter-kit": ^2.10.0
-    "@tiptap/suggestion": ^2.10.0
-    crypto-js: ^4.2.0
-    fetch-event-stream: ^0.1.5
-    i18next: ^23.16.2
-    lowlight: ^3.1.0
-    markdown-it: ^14.1.0
-    markdown-it-container: ^4.0.0
-    tippy.js: ^6.3.7
-    turndown: ^7.2.0
-  checksum: e15403adf0b8f5d52098c9fa06bd51d65c74e7ab38ec8ca20cb057bd026d2434b5f8954a32ce440d9e2bc3a9b106742b205c6c597e6b3bfc0a75fd1416e15067
   languageName: node
   linkType: hard
 

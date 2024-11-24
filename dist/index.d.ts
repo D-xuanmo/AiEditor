@@ -47,7 +47,6 @@ export declare class AiEditor {
     container: HTMLDivElement;
     header: Header;
     mainEl: HTMLDivElement;
-    footer: Footer;
     options: AiEditorOptions;
     eventComponents: AiEditorEventListener[];
     constructor(_: AiEditorOptions);
@@ -306,17 +305,6 @@ export declare interface CustomMenu {
 declare type DefaultToolbarKey = (typeof defaultToolbarKeys)[number];
 
 declare const defaultToolbarKeys: string[];
-
-declare class Footer extends HTMLElement implements AiEditorEventListener {
-    count: number;
-    draggable: boolean;
-    constructor();
-    initDraggable(draggable?: boolean): void;
-    updateCharacters(): void;
-    onCreate(props: EditorEvents['create'], _: AiEditorOptions): void;
-    onTransaction(props: EditorEvents['transaction']): void;
-    onEditableChange(editable: boolean): void;
-}
 
 declare class Header extends HTMLElement implements AiEditorEventListener {
     menuButtons: AbstractMenuButton[];

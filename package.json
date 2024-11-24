@@ -1,7 +1,7 @@
 {
   "name": "@xuanmo/aieditor",
   "author": "D-xuanmo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
@@ -56,7 +56,6 @@
     "@tiptap/pm": "^2.10.1",
     "@tiptap/starter-kit": "^2.10.1",
     "@tiptap/suggestion": "^2.10.1",
-    "aieditor": "^1.2.7",
     "crypto-js": "^4.2.0",
     "fetch-event-stream": "^0.1.5",
     "i18next": "^23.16.2",
