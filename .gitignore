@@ -17,6 +17,7 @@ aimp/
 /docs/.vitepress/dist/
 /demos/vanilla-ts/dist/
 /.yarn
+/dist
 
 dist
 
