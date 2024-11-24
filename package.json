@@ -30,14 +30,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "@types/node": "^20.9.0",
-    "less": "^4.2.0",
-    "typescript": "^5.0.2",
-    "vite": "^5.4.6",
-    "vite-plugin-dts": "^3.6.3"
+    "preview": "vite preview",
+    "prettier": "prettier --write src"
   },
   "dependencies": {
     "@tiptap/core": "^2.10.1",
@@ -67,18 +61,28 @@
     "@tiptap/pm": "^2.10.1",
     "@tiptap/starter-kit": "^2.10.1",
     "@tiptap/suggestion": "^2.10.1",
+    "aieditor": "^1.2.7",
     "crypto-js": "^4.2.0",
     "fetch-event-stream": "^0.1.5",
     "i18next": "^23.16.2",
     "lowlight": "^3.1.0",
     "markdown-it": "^14.1.0",
     "markdown-it-container": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tippy.js": "^6.3.7",
-    "turndown": "^7.2.0"
+    "turndown": "^7.2.0",
+    "vue": "^3.5.13"
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@xuanmo/prettier-config": "^0.0.2",
+    "eslint-config-xuanmo": "^0.0.2",
+    "less": "^4.2.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.4.6",
+    "vite-plugin-dts": "^3.6.3"
   },
   "repository": {
     "type": "git",
@@ -88,5 +92,6 @@
     "url": "https://github.com/aieditor-team/aieditor/issues"
   },
   "homepage": "https://github.com/aieditor-team/aieditor#readme",
-  "license": "LGPL"
+  "license": "LGPL",
+  "prettier": "@xuanmo/prettier-config"
 }

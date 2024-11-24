@@ -1,26 +1,26 @@
-import {Node, mergeAttributes} from '@tiptap/core';
+import { Node, mergeAttributes } from '@tiptap/core'
 
 export const FigureExt = Node.create({
-    name: 'figure',
-    content: 'block+',
-    group: 'block',
-    defining: true,
-    draggable: true,
-    selectable: true,
+  name: 'figure',
+  content: 'block+',
+  group: 'block',
+  defining: true,
+  draggable: true,
+  selectable: true,
 
-    addOptions() {
-        return {
-            HTMLAttributes: {
-                dir: 'auto',
-            },
-        };
-    },
+  addOptions() {
+    return {
+      HTMLAttributes: {
+        dir: 'auto'
+      }
+    }
+  },
 
-    parseHTML() {
-        return [{tag: 'figure'}];
-    },
+  parseHTML() {
+    return [{ tag: 'figure' }]
+  },
 
-    renderHTML({HTMLAttributes}) {
-        return ['figure', mergeAttributes(this.options.HTMLAttributes, HTMLAttributes), 0];
-    },
-});
+  renderHTML({ HTMLAttributes }) {
+    return ['figure', mergeAttributes(this.options.HTMLAttributes, HTMLAttributes), 0]
+  }
+})

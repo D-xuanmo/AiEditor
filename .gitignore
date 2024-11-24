@@ -16,6 +16,7 @@ deps/
 aimp/
 /docs/.vitepress/dist/
 /demos/vanilla-ts/dist/
+/.yarn
 
 dist
 
@@ -35,4 +36,3 @@ xinghuo.ts
 wenxin.ts
 spark.ts
 chatgpt.ts
-

@@ -1,6 +1,7 @@
 # AiEditor ChangeLog
 
 ## v1.2.7 20241121:
+
 - fix: When configuring contentIsMarkdown, it may affect the reload problem
 - fix: When markdown parses images, the images will be wrapped in p tags, resulting in incorrect parsing
 - fix: The problem of prompting domain errors when using spark lite models
@@ -9,6 +10,7 @@
 - feat: Upgrade related dependencies to the latest version
 
 ---
+
 - 修复: 当配置 contentIsMarkdown 时，可能会影响再次加载的问题
 - 修复: markdown 在解析图片时，图片会被 p 标签包裹导致无法正确解析的问题
 - 修复：使用 spark lite 模型提示 domain 错误的问题
@@ -16,33 +18,32 @@
 - 优化：table 中存在空的 p 标签时，其高度不正确的问题
 - 优化：升级相关依赖到最新版本
 
-
-
 ## v1.2.6 20241114:
+
 - fix: Fixed the line break issue when AI translation and AI output replacement content
 - fix: Fixed the issue of not being able to select content on Android devices (IOS does not have this problem)
 - feat: The title of the menu group is changed to an optional configuration, and will not pop up when it is not filled in
 
 ---
+
 - 修复: 修复 AI 翻译、AI 输出替换内容时换行的问题
 - 修复: 修复在 Android 设备下无法选择内容的问题（IOS 没有这个问题）
 - 优化：菜单组的 title 修改为可选配置，当不填写时不弹出显示
 
-
-
 ## v1.2.5 20241031:
+
 - fix: CodeBlock Extensions error sometime
 - fix: optimize paste extension and fix paste with data-pm-slice is error
 - fix: fix tab key conflict with ordered lists
 
 ---
+
 - 修复：代码插件在某些情况下错处的问题
 - 修复：优化粘贴内容插件并修复粘贴文本时独占一行的问题
 - 修复：修复 tab 键和列表冲突的问题
 
-
-
 ## v1.2.3 20241024:
+
 - feat: added more language files for i18n
 - feat: custom ai model support http ReadableStream
 - feat: Added toolbarSize to control toolbar button size
@@ -51,6 +52,7 @@
 - chore: optimize styles
 
 ---
+
 - 新增: 新增更多的语言支持，目前已经支持 中文、英文、德语、葡萄牙语、西班牙语、印度语、印尼语、日语、韩语、泰语、越南语
 - 新增: 自定义大语言模型支持 http ReadableStream
 - 新增: 添加 toolbarSize 配置用于控制工具栏按钮的大小
@@ -58,9 +60,8 @@
 - 优化: 更新依赖到最新版本
 - 优化: 优化样式细节
 
-
-
 ## v1.2.2 20241018:
+
 - feat: add new option "textCounter"
 - feat: add temperature and maxTokens config for aiModel
 - refactor: optimize paste extensions and add new option "removeEmptyParagraphs" for paste
@@ -72,7 +73,8 @@
 - fix: image border is 1px smaller after resizing
 - fix: SparkAiModel error if use v1.1
 
---- 
+---
+
 - 新增: 添加新的配置 "textCounter" 用于自定义文字数量的统计
 - 新增: AI 新增 temperature 和 maxTokens 的配置功能
 - 优化: 粘贴的功能添加新的 "removeEmptyParagraphs" 配置，用于移除空段落
@@ -84,9 +86,8 @@
 - 修复: 图片在拖拽大小后，其宽度会小 1px 的问题
 - 修复: 星火大模型无法使用其最低版本 v1.1 的问题
 
-
-
 ## v1.2.0 20241016:
+
 - feat: Enhanced pasting from Excel, WPS, LibreOffice, Number, and Tencent Docs table content
 - feat: add new options "image.bubbleMenuEnable"
 - feat: add "htmlPasteConfig.clearLineBreaks" options
@@ -102,6 +103,7 @@
 - fix: fixed "&nbsp" will be attached sometime if pastedAsText config enable
 
 ---
+
 - 新增: 增强来至于 Excel, WPS, LibreOffice, Number 和 腾讯文档的表格粘贴功能
 - 新增: 添加新的配置 "image.bubbleMenuEnable"
 - 新增: 添加新的配置 "htmlPasteConfig.clearLineBreaks"
@@ -116,9 +118,8 @@
 - 修复: 修复 OpenaiAiModel 的消息在某些情况下解析错误的问题
 - 修复: 修复在 pastedAsText 配置的情况下，"&nbsp" 会被粘贴的问题
 
-
-
 ## v1.1.7 20241002:
+
 - feat: add SmoothAppender for textarea
 - refactor: optimize AiEditor.onTransaction() method
 - refactor: rename "PasteExt" extension Name to adapter v2.8.0
@@ -126,56 +127,57 @@
 - refactor: update linkBubbleMenu pluginKey's name
 
 ---
+
 - 新增: 新增 SmoothAppender 使得 AI 输入更加湿滑
 - 优化: 优化 AiEditor.onTransaction() 的相关代码
 - 优化: 重命名 "PasteExt" 插件的名称以适配 v2.8.0
 - 优化: 优化 BubbleMenuPlugin.ts 的核心逻辑
 - 优化: 重命名 linkBubbleMenu 插件的名称
 
-
-
 ## v1.1.6 20240928:
+
 - feat: Hide the emoji panel when clicking an emoji.
 - feat: add html paste config and close https://github.com/aieditor-team/AiEditor/issues/92
 - refactor: add icons in Translate action buttons
 - fix: cat not show bubble menu on Cmd+A text selection command, close https://github.com/aieditor-team/AiEditor/issues/91
 
 ---
+
 - 优化：当点击 emoji 表情的时候，隐藏 emoji 面板
 - 优化：Html 粘贴添加更多的配置功能
 - 优化：为翻译面板的操作按钮添加统一的图标
 - 修复：通过快捷键 CMD+A 全选时，无法弹出选择操作浮动菜单的问题
 
-
-
 ## v1.1.5 20240926:
+
 - refactor: optimize textSelectionBubbleMenu only update at the mouseup event
 - refactor: update dependencies
 - fix: fixed the translated buttons would trigger form submission
 
 ---
+
 - 优化：优化文字选中弹出菜单仅在鼠标松开的时候进行弹出
 - 优化：更新相关依赖到最新版本
 - 修复：修复翻译的按钮会触发表单提交的问题
 
-
 ## v1.1.4 20240925:
+
 - feat: add ClassName extension for custom node class attribute
 - feat: add custom AI icon in bubble menu
 - refactor: refactor translate bubble menu
 - refactor: refactor ai bubble panel
-- refactor: add more common emojis 
+- refactor: add more common emojis
 
---- 
+---
+
 - 新增：新增 ClassName 插件，用于自定义节点的 class 样式
 - 新增：添加自定义泡泡菜单的 AI ICON 的功能
 - 优化：重构 翻译 功能的交互逻辑
 - 优化：重构 AI 弹出菜单的交互细节
 - 优化：添加更多场景的 emoji 表情
 
-
-
 ## v1.1.3 20240923:
+
 - feat: add translate bubble menu items
 - feat: add "pasteAsText" config support
 - feat: add de and pt langs, thanks to @TobiasKrais
@@ -187,7 +189,7 @@
 - chore: create npm-publish.yml
 - chore: remove comment code
 
---- 
+---
 
 - 新增: 浮动菜单新增翻译功能，以及自定义翻译语言
 - 新增: 新增 "pasteAsText" 配置的功能，在粘贴时自动清除样式
@@ -200,9 +202,8 @@
 - 优化: 创建 npm-publish.yml 用于自动发布的功能
 - 优化: 上传部分注释代码
 
-
-
 ## v1.1.1 20240915:
+
 - feat: Increase the indent to 2em instead of 10px
 - feat: add FontSize defaultValue config
 - feat: add "align" config with image from server response.
@@ -235,9 +236,8 @@
 - 文档: 添加自定义行高设置的相关文档
 - 文档: 添加 "toolbarExcludeKeys" 配置的相关文档
 
-
-
 ## v1.1.0 20240909:
+
 - feat: add "onClick" config support for ai menu to custom menu item click event.
 - feat: add commands() method for aieditor
 - fix: onCreateBefore for custom extensions
@@ -250,10 +250,8 @@
 - 修复: onCreateBefore 自定义扩展不生效的问题
 - 修复: Gitee AI 有 console.log 打印的问题
 
-
-
-
 ## v1.0.16 20240903:
+
 - feat: add menu group config support
 - refactor: optimize image export wrapper in "p" tag
 - refactor: rename "uploadFile" to "fileUploader"
@@ -274,9 +272,8 @@
 - 修复: 修复行高回显不正确的问题
 - 修复: 修复国际化配置不正确的问题 delete-table -> 删除表格
 
-
-
 ## v1.0.15 20240828:
+
 - feat: Image custom properties and lazy loading
 - feat: add gitee ai model support, use the serverless api
 - refactor: optimize ImageExt.ts
@@ -289,9 +286,8 @@
 - 优化：优化 图片 插件
 - 优化：升级相关依赖到最新版本
 
-
-
 ## v1.0.14 20240812:
+
 - feat: codeBlock add languages and prompts config
 - feat: add demos for svelte
 - fix: img align not effective if export to html
@@ -306,9 +302,8 @@
 - 修复：图片对其方式导出为 html 时不生效的问题
 - 文档：添加和 svelte 框架集成的相关文档
 
-
-
 ## v1.0.13 20240714:
+
 - feat: add AIPanelMenus config support
 - optimize: update video attribute controls
 - fix: AI Menus init error
@@ -321,9 +316,8 @@
 - 修复：修复 AI 菜单初始化错误的问题
 - 文档：新增日文的 readme
 
-
-
 ## v1.0.11 20240702:
+
 - feat: Added onBlur and onFocus configurations for AIEditor #39
 - feat: Added the function of customizing the selected floating menu
 - feat: Added the function of AIEditor.getAttributes() method
@@ -340,9 +334,8 @@
 - 优化：重构 AbstractBubbleMenu.ts 使之更加简单易用
 - 修复：修复 Vue 的 KeepAlive 下 Header 多次添加的问题 #37
 
-
-
 ## v1.0.10 20240620:
+
 - 新增：新增浮动菜单的开关和菜单项配置功能
 - 新增：新增链接的浮动菜单项配置功能
 - 新增：新增图片的浮动菜单项配置功能
@@ -350,19 +343,17 @@
 - 优化：重构 AbstractBubbleMenu.ts 使之更加简单易用
 - 文档：现在浮动菜单的相关配置功能
 
-
-
 ## v1.0.8 20240613:
+
 - 新增：AiModel 添加 chatWithPayload 方法用于传入自定义的 ai 参数信息
 - 新增：源码编辑的功能菜单，及其配置。感谢 @jx
 - 新增：添加是否可以对整个编辑器拖拽放大缩小的开关配置
 - 优化：优化 a 标签在暗色主题下的样式问题，感谢 @lwleen
 - 优化：编辑的滚动条样式，感谢 @lwleen
-- 优化：移除无用的配置 cbName 和 cbUrl 
-
-
+- 优化：移除无用的配置 cbName 和 cbUrl
 
 ## v1.0.6 20240607:
+
 - 新增：AI 大模型新增对 Openai 和 月之暗面 的支持
 - 新增：编辑元素新增对 Figure 和 Figcaption 元素的支持
 - 新增：AI Prompt 提示词自定义添加对 {content} 占位符的支持
@@ -372,9 +363,8 @@
 - 优化：优化代码里的一些单词拼写错误
 - 优化：优化 AIEditor 内部的一些样式名称，防止产生可能的冲突
 
-
-
 ## v1.0.4 20240528:
+
 - 新增：textSelectionBubbleMenu 添加开关配置的支持
 - 优化：在只读模式下，应该关闭掉选中文字菜单的弹出
 - 优化：当 AI 大模型配置错误的时候，给出更友好的错误提示
@@ -384,17 +374,15 @@
 - 修复：AI 菜单在某些场景下出现错位的问题，感谢 @monksoul
 - 文档：添加 React 对 AiEditor 的封装为组件的相关文档，感谢 @monksoul
 
-
-
 ## v1.0.1 20240522:
+
 - 优化：默认 AIEditor 导出更多的类，方便用户开发
 - 修复：图片、附件、视频的 uploadFormName 配置无效的问题
 - 修复：CodeBlock 的菜单无法正切换国际化的问题
 - 文档：添加和各类 UI 框架集成的相关文档
 
-
-
 ## v1.0.0 20240329:
+
 - 新增：上传附件、图片、视频添加自定义 formName 的配置能力
 - 新增：选择文字内容后，弹出的 AI 菜单添加默认操作项的功能
 - 优化：上传附件、图片、视频的 uploadHeaders 支持配置为一个方法
@@ -402,9 +390,8 @@
 - 文档：添加修改文件、图片和视频的相关错别字
 - 文档：添加关于 uploadHeaders 可配置为方法的相关文档
 
-
-
 ## v1.0.0-rc.9 20240324:
+
 - 新增：自定义大语言模型添加 headers 配置的支持
 - 优化：优化 ai 翻译的 prompt 内容，以保证能够正确翻译多国语言
 - 优化：移除代码中一些多余的日志输出
@@ -412,9 +399,8 @@
 - 文档：修正快速开始的 ai 配置不正确（未同步最新版本）的问题
 - 文档：添加关于自定义大模型的相关文档
 
-
-
 ## v1.0.0-rc.8 20240317:
+
 - 新增：添加自定义对接任意大模型的支持
 - 新增：添加文心一言大模型的支持，感谢 @bendantada
 - 新增：星火大模型添加对 v3.5 的支持
@@ -423,29 +409,26 @@
 - 文档：修正图片上传的示例错误代码
 - 文档：更新配置 models 的相关错误示例
 
-
-
 ## v1.0.0-rc.7 20240109:
+
 - 新增：添加当 uploader 的 onUploadBefore 返回 false 时，中断文件上传
 - 新增：Ai 模块添加自定义 AiModelFactory 的配置，方便引用第三方 Ai 大模型
-- 优化：修改  AiEditor.insert 的参数为 any 类型
+- 优化：修改 AiEditor.insert 的参数为 any 类型
 - 优化：重命名 AiModelFactory 为 AiModelManager
 - 修复：修改全屏按钮在某些情况下不起作用的问题，感谢 @ashuicoder
 - 修复：高亮块、链接、引用获得焦点时，菜单没有被激活的问题
 - 修复：选中文字弹出菜单，菜单内的操作没有根据选择内容激活的问题
 
-
-
 ## v1.0.0-rc.6 20240102:
+
 - 新增：添加 onSave 的配置，可以用于监听用户按 ctrl + s 的保存操作
 - 优化：修改 editable 配置为可选
 - 优化：添加 AiModelManager 以及 SparkAiModel 导出
 - 修复：修改在 editable 为 false 下，代码块的 ai 功能依然可用的问题
 - 文档：修正 onCreateClientUrl
 
-
-
 ## v1.0.0-rc.5 20240101:
+
 - 新增：CustomMenu 添加 onCreate 方法，方便对自定义菜单进行初始化
 - 新增：添加 setContent() 以及 setEditable() 方法
 - 优化：重构 AI 菜单功能及其 UI 样式
@@ -456,25 +439,22 @@
 - 文档：添加只读模式的相关文档
 - 文档：更新 ai 配置的相关文档
 
-
-
 ## v1.0.0-rc.4 20231222:
+
 - 修复：当 AiEditor 嵌入到 Form 时，点击某些按钮会触发 Form 提交的问题
 - 修复：从网页复制的内容粘贴到编辑器，图片无法被粘贴进来的问题
 - 修复：点击表格、图片时，会有多个弹出菜单位置冲突的问题
 
-
-
 ## v1.0.0-rc.2 20231220:
+
 - 新增：自定义菜单添加 id 和 className 类名配置的支持
 - 新增：AiEditor 添加 onDestroy 监听的配置支持
 - 优化：上传组件重命名 onBeforeUpload 为 onUploadBefore
 - 修复：在 React 的 StrictMode 下，无法使用 AiEditor 自定义布局的问题
 - 文档：添加自定义布局的相关文档内容
 
-
-
 ## v1.0.0-rc.1 20231219:
+
 - 新增：AI 功能添加选择文字时，对文字进行在定义 Prompt 操作的功能
 - 新增：添加选中文字内容时，弹出操作菜单的功能
 - 新增：AiEditor 添加 onCreateBefore 的钩子函数，方便初始化插件
@@ -485,17 +465,15 @@
 - 样式：优化编辑器诸多样式细节
 - 文档：添加链接配置 ref/class 等相关配置的文档
 
-
-
 ## v1.0.0-beta.10 20231213:
+
 - 新增：添加自定义 menu 菜单的支持
 - 新增：图片添加 defaultSize 和 allowBase64 配置的支持
 - 优化：优化 "getOutline()" 方法的逻辑，添加获取 id 的支持
 - 优化：类腾讯文档风格的 demo 实例添加目录显示的功能
 
-
-
 ## v1.0.0-beta.9 20231208:
+
 - 新增：图片、视频和附件新增 uploaderEvent 监听配置的支持
 - 新增：“链接” 功能添加自定义 ref、class 等配置的支持
 - 新增：添加头部、编辑区的自定义布局支持
@@ -507,9 +485,8 @@
 - 文档：更新关于 uploaderEvent 的相关文档
 - 文档：图片添加关于自定义 uploader 的代码示例
 
-
-
 ## v1.0.0-beta.8 20231207:
+
 - 新增：`代码块` 新增 AI 自动添加注释的功能
 - 新增：`代码块` 新增 AI 解释代码含义的功能
 - 新增：AiEditor 添加 `getSelectedText()` 用于获取选择的文字
@@ -518,9 +495,8 @@
 - 样式：修改 `引用`（`blockquote`）在暗色模式下的样式问题
 - 文档：添加关于 `dataProcessor` 的相关文档
 
-
-
 ## v1.0.0-beta.7 20231204:
+
 - 新增：AiEditor 添加 getMarkdown() 方法，用于获得 markdown 内容
 - 新增：AiEditor 添加 getOutline() 方法，用于获得文章的目录内容
 - 新增：AiEditor.focusPos(pos) 方法用于定位当前焦点到指定位置
@@ -538,9 +514,8 @@
 - 文档：更细 AiEditor 的 API 方法列表
 - 文档：readme 添加英文版本的内容
 
-
-
 ## v1.0.0-beta.6 20231201:
+
 - 新增：增强对 AI 输出自动进行 markdown 转换的功能
 - 新增：AiEditor 的相关操作方法支持链式调用的功能
 - 新增：添加 "aiEditor.insertMarkdown()" 用于插入 markdown 内容
@@ -550,9 +525,8 @@
 - 文档：添加代码示例的相关链接
 - 文档：更新 AI 功能的相关文档
 
-
-
 ## v1.0.0-beta.5 20231129:
+
 - 新增：为 aieditor 添加全新的 logo
 - 新增：添加 1i8n 国际化支持
 - 新增：添加 vue 和 aieditor 整合的示例代码和文档
@@ -564,9 +538,8 @@
 - 修复：插入表格时，显示问题 #I8JMYU
 - 文档：同步更新许多文档
 
-
-
 ## v1.0.0-beta.3 20231127:
+
 - 新增：完善文档站点 https://aieditor.dev 并上线
 - 新增：添加内容编辑自动保存到 localStorage 功能及其相关 API
 - 新增：字体颜色、背景颜色等的最近颜色现在添加自动保存到 localStorage 功能
@@ -576,9 +549,8 @@
 - 优化：优化暗色模式下，一些组件比如 Popover 显示不正确的问题
 - 优化：优化许多样式细节
 
-
-
 ## v1.0.0-beta.2 20231120:
+
 - 新增：添加输入 "/" 时弹出 AI 菜单的功能
 - 新增：AiEditor 添加 onChange 的回调配置
 - 新增：星火大模型添加 ws 和 wss 协议配置的支持
@@ -596,7 +568,6 @@
 - 修复：链接弹出菜单点击取消链接时，错误的弹出编辑框的问题
 - 修复：Firefox 浏览器下某些 icon 无法显示的问题
 
-
-
 ## v1.0.0-beta.1 20231110:
+
 完善基本功能

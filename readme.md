@@ -2,21 +2,17 @@
 
 ![](./docs/assets/image/readme-banner.png)
 
-
 <h1 align="center"><a href="https://aieditor.dev" target="_blank">AIEditor.dev</a></h1>
 <h2 align="center">An AI-Powered rich text editor</h2>
 <h4 align="center">Out-of-the-box, Fully Framework Supported, Markdown Friendly</h4>
 
-
 ![](./docs/assets/image/index-banner.png)
-
 
 ## Start following and using AIEditor
 
 Give us a star so that you can be notified in time when we release new versions.
 
 ![](./docs/assets/image/star.gif)
-
 
 ## What is AIEditor
 
@@ -25,10 +21,10 @@ and mobiles, and provides two themes: light and dark. In addition, it also provi
 
 For more information about AiEditor, please visit the official website: https://aieditor.dev
 
-
 ## What makes AIEditor different
 
 ### 1. AI-Powered editor
+
 The goal of AIEditor is to create a rich text editor that is completely driven by AI, and supports docking with any large model, including private large models. Allow users to use their own private large model ApiKey.
 Not only that, all AI functions of AIEditor allow users to customize their own prompts and extended AI menus.
 
@@ -38,15 +34,14 @@ AIEditor is developed based on Web Component and supports integration with any m
 without worrying about the GPL infection problem that may be caused by the GPL protocol.
 
 ### 3. In addition to the open source version, a commercial version is also available
+
 In addition to the open source version, we also provide a more powerful commercial version, which does not limit the number of users or the number of applications. For more comparisons of commercial versions,
 please refer to here: https://aieditor.dev/versions.html
-
 
 ## Online Demo
 
 - Classic/traditional style: https://aieditor.dev/demo.html
 - Modern style: http://doc.aieditor.com.cn
-
 
 ## Completed
 
@@ -61,14 +56,13 @@ please refer to here: https://aieditor.dev/versions.html
 - [x] Modern UI style similar to Tencent Documents
 
 ## Commercial version
+
 - [x] Notion-like content block dragging function
 - [x] Word import, Word export
 - [x] PDF export
 - [x] Latex mathematical formula editing
 - [x] Team collaboration (multiple people editing a document at the same time)
 - [x] Annotation function, similar to the function of selecting a paragraph of text to annotate and comment on it in Word
-
-
 
 ## Under development...
 
@@ -77,7 +71,6 @@ please refer to here: https://aieditor.dev/versions.html
 - [ ] AI one-click typesetting
 - [ ] Further enhance the paste function
 - [ ] Automatically obtain thumbnails when uploading videos
-
 
 ## Quick start
 

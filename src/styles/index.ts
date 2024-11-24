@@ -1,3 +1,3 @@
-import './variable.less';
-import './aieditor.less';
-import './aiecontent.less';
+import './variable.less'
+import './aieditor.less'
+import './aiecontent.less'

@@ -1,24 +1,24 @@
-import {Node, mergeAttributes} from '@tiptap/core';
+import { Node, mergeAttributes } from '@tiptap/core'
 
 export const FigcaptionExt = Node.create({
-    name: 'figcaption',
-    content: 'inline*',
-    group: 'block',
-    defining: true,
+  name: 'figcaption',
+  content: 'inline*',
+  group: 'block',
+  defining: true,
 
-    addOptions() {
-        return {
-            HTMLAttributes: {
-                dir: 'auto',
-            },
-        };
-    },
+  addOptions() {
+    return {
+      HTMLAttributes: {
+        dir: 'auto'
+      }
+    }
+  },
 
-    parseHTML() {
-        return [{tag: 'figcaption'}];
-    },
+  parseHTML() {
+    return [{ tag: 'figcaption' }]
+  },
 
-    renderHTML({HTMLAttributes}) {
-        return ['figcaption', mergeAttributes(this.options.HTMLAttributes, HTMLAttributes), 0];
-    },
-});
+  renderHTML({ HTMLAttributes }) {
+    return ['figcaption', mergeAttributes(this.options.HTMLAttributes, HTMLAttributes), 0]
+  }
+})

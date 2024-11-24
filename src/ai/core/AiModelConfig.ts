@@ -1,4 +1,4 @@
 export interface AiModelConfig {
-    temperature?: number;
-    maxTokens?: number;
+  temperature?: number
+  maxTokens?: number
 }

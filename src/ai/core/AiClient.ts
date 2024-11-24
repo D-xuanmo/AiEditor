@@ -1,5 +1,4 @@
-
 export interface AiClient {
-    start: (payload: string) => void;
-    stop: () => void;
+  start: (payload: string) => void
+  stop: () => void
 }
