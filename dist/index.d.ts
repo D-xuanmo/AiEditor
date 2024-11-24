@@ -76,7 +76,7 @@ export declare class AiEditor {
     insert(content: any): this;
     insertMarkdown(content: string): this;
     setEditable(editable: boolean): this;
-    setContent(content: string): this;
+    setContent(content: string, focus?: boolean): this;
     setMarkdownContent(content: string): this;
     clear(): this;
     isEmpty(): boolean;
@@ -443,22 +443,6 @@ declare module '@tiptap/core' {
 
 declare module '@tiptap/core' {
     interface Commands<ReturnType> {
-        lineHeight: {
-            /**
-             * Set the line height attribute
-             */
-            setLineHeight: (height: string) => ReturnType;
-            /**
-             * Unset the text align attribute
-             */
-            unsetLineHeight: () => ReturnType;
-        };
-    }
-}
-
-
-declare module '@tiptap/core' {
-    interface Commands<ReturnType> {
         indent: {
             indent: () => ReturnType;
             outdent: () => ReturnType;
@@ -471,6 +455,22 @@ declare module '@tiptap/core' {
     interface Commands<ReturnType> {
         Image: {
             uploadImage: (file: File) => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        lineHeight: {
+            /**
+             * Set the line height attribute
+             */
+            setLineHeight: (height: string) => ReturnType;
+            /**
+             * Unset the text align attribute
+             */
+            unsetLineHeight: () => ReturnType;
         };
     }
 }

@@ -386,8 +386,12 @@ export class AiEditor {
     return this
   }
 
-  setContent(content: string) {
-    this.focus().clear().insert(content)
+  setContent(content: string, focus?: boolean) {
+    if (focus) {
+      this.focus().clear().insert(content)
+    } else {
+      this.clear().insert(content)
+    }
     return this
   }
 
