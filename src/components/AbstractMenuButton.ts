@@ -1,4 +1,4 @@
-import { AiEditorOptions, AiEditorEventListener } from '../core/AiEditor.ts'
+import { AiEditorOptions, AiEditorEventListener } from '../core/types.ts'
 import { Editor, EditorEvents } from '@tiptap/core'
 // @ts-ignore
 import { ChainedCommands } from '@tiptap/core/dist/packages/core/src/types'

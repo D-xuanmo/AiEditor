@@ -2,7 +2,7 @@ import { AbstractBubbleMenu } from '../AbstractBubbleMenu.ts'
 import { Editor, EditorEvents } from '@tiptap/core'
 import { CellSelection, TableMap } from '@tiptap/pm/tables'
 import { EditorView } from '@tiptap/pm/view'
-import { AiEditorOptions } from '../../core/AiEditor.ts'
+import { AiEditorOptions } from '../../core/types.ts'
 
 export class TableBubbleMenu extends AbstractBubbleMenu {
   constructor() {

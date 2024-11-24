@@ -1,9 +1,10 @@
-import { AiEditorOptions, AiEditorEventListener, InnerEditor } from '../core/AiEditor.ts'
+import { InnerEditor } from '../core/AiEditor.ts'
 import { Editor, EditorEvents } from '@tiptap/core'
 import tippy, { Instance } from 'tippy.js'
 import { BubbleMenuItem } from './bubbles/types.ts'
 import { MenuRecord } from './bubbles/items/MenuRecord.ts'
 import { t } from 'i18next'
+import { AiEditorEventListener, AiEditorOptions } from '../core/types.ts'
 
 export abstract class AbstractBubbleMenu extends HTMLElement implements AiEditorEventListener {
   editor?: Editor
@@ -23,8 +24,8 @@ export abstract class AbstractBubbleMenu extends HTMLElement implements AiEditor
     this.innerHTML = `
             <div class="aie-bubble-menu">
                ${this.items!.map((item) => {
-                 return `<div class="aie-bubble-menu-item ${this.isActive(item.id) ? 'active' : ''}" id="${item.id}">${item.icon}</div>`
-               }).join('')}
+      return `<div class="aie-bubble-menu-item ${this.isActive(item.id) ? 'active' : ''}" id="${item.id}">${item.icon}</div>`
+    }).join('')}
             </div>
         `
 
@@ -87,8 +88,10 @@ export abstract class AbstractBubbleMenu extends HTMLElement implements AiEditor
     item.onClick?.((this.editor as InnerEditor).aiEditor, this.tippyInstance!, this, item.holder)
   }
 
-  onTransaction(_transEvent: EditorEvents['transaction']) {}
+  onTransaction(_transEvent: EditorEvents['transaction']) {
+  }
 
   // @ts-ignore
-  onEditableChange(editable: boolean) {}
+  onEditableChange(editable: boolean) {
+  }
 }

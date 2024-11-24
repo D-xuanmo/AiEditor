@@ -1,8 +1,8 @@
 import { EditorEvents } from '@tiptap/core'
-import { AiEditorOptions, MenuGroup } from '../../core/AiEditor.ts'
 import { AbstractMenuButton } from '../AbstractMenuButton.ts'
 import { initToolbarKeys } from '../../util/initToolbarKeys.ts'
 import tippy, { Instance } from 'tippy.js'
+import { AiEditorOptions, MenuGroup } from '../../core/types.ts'
 
 export class Group extends AbstractMenuButton {
   menuButtons: AbstractMenuButton[] = []

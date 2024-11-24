@@ -1,10 +1,11 @@
-import { AiEditorOptions, CustomMenu, InnerEditor, MenuGroup } from '../core/AiEditor.ts'
+import { InnerEditor } from '../core/AiEditor.ts'
 import { AbstractMenuButton } from '../components/AbstractMenuButton.ts'
 import { t } from 'i18next'
 import tippy from 'tippy.js'
 import { Group } from '../components/menus/Group.ts'
 import { Custom } from '../components/menus/Custom.ts'
 import { EditorEvents } from '@tiptap/core'
+import { AiEditorOptions, CustomMenu, MenuGroup } from '../core/types.ts'
 
 export const initToolbarKeys = (
   event: EditorEvents['create'],
@@ -37,14 +38,14 @@ export const initToolbarKeys = (
           menuButton.setAttribute('data-title', tip)
           menuButton.setAttribute('data-size', options.toolbarSize as string)
           tip &&
-            tippy(menuButton, {
-              appendTo: () => event.editor.view.dom.closest('.aie-container')!,
-              content: tip,
-              theme: 'aietip',
-              arrow: true
-              // trigger:"click",
-              // interactive:true,
-            })
+          tippy(menuButton, {
+            appendTo: () => event.editor.view.dom.closest('.aie-container')!,
+            content: tip,
+            theme: 'aietip',
+            arrow: true
+            // trigger:"click",
+            // interactive:true,
+          })
         }
         menuButtons.push(menuButton)
       } else {
@@ -66,14 +67,14 @@ export const initToolbarKeys = (
           if (menuGroup.title) {
             const tip = t(menuGroup.title) as string
             tip &&
-              tippy(menuButton, {
-                appendTo: () => event.editor.view.dom.closest('.aie-container')!,
-                content: tip,
-                theme: 'aietip',
-                arrow: true
-                // trigger:"click",
-                // interactive:true,
-              })
+            tippy(menuButton, {
+              appendTo: () => event.editor.view.dom.closest('.aie-container')!,
+              content: tip,
+              theme: 'aietip',
+              arrow: true
+              // trigger:"click",
+              // interactive:true,
+            })
           }
           menuButtons.push(menuButton)
         }
@@ -101,14 +102,14 @@ export const initToolbarKeys = (
           if (customMenuConfig.tip) {
             const tip = t(customMenuConfig.tip) as string
             tip &&
-              tippy(menuButton, {
-                appendTo: () => event.editor.view.dom.closest('.aie-container')!,
-                content: tip,
-                theme: 'aietip',
-                arrow: true
-                // trigger:"click",
-                // interactive:true,
-              })
+            tippy(menuButton, {
+              appendTo: () => event.editor.view.dom.closest('.aie-container')!,
+              content: tip,
+              theme: 'aietip',
+              arrow: true
+              // trigger:"click",
+              // interactive:true,
+            })
           }
 
           if (customMenuConfig.onCreate) {

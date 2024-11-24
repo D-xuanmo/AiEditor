@@ -1,5 +1,5 @@
-import { AiEditorOptions, AiEditorEventListener } from '../core/AiEditor.ts'
 import { EditorEvents } from '@tiptap/core'
+import { AiEditorEventListener, AiEditorOptions } from '../core/types.ts'
 
 export class Footer extends HTMLElement implements AiEditorEventListener {
   count: number = 0
@@ -98,5 +98,6 @@ export class Footer extends HTMLElement implements AiEditorEventListener {
   }
 
   // @ts-ignore
-  onEditableChange(editable: boolean) {}
+  onEditableChange(editable: boolean) {
+  }
 }

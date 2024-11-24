@@ -1,4 +1,4 @@
-import { Uploader } from '../core/AiEditor'
+import { Uploader } from '../core/types.ts'
 
 export const base64Uploader: Uploader = (
   file: File,

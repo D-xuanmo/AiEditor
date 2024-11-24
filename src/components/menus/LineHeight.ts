@@ -1,6 +1,6 @@
 import { Editor, EditorEvents } from '@tiptap/core'
 import { AbstractDropdownMenuButton } from '../AbstractDropdownMenuButton.ts'
-import { AiEditorOptions } from '../../core/AiEditor.ts'
+import { AiEditorOptions } from '../../core/types.ts'
 
 const titles = ['1.0', '1.25', '1.5', '2.0', '2.5', '3.0']
 

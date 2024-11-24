@@ -29,7 +29,7 @@ import { IFrameExt } from '../extensions/IFrameExt.ts'
 import { getBubbleMenus } from './getBubbleMenus.ts'
 import { Placeholder } from '@tiptap/extension-placeholder'
 import { createMention } from '../extensions/MentionExt.ts'
-import { AiEditor, AiEditorOptions } from './AiEditor.ts'
+import { AiEditor } from './AiEditor.ts'
 import { AiCommandExt, defaultCommands } from '../extensions/AiCommandExt.ts'
 import { SelectionMarkerExt } from '../extensions/SelectionMarkerExt.ts'
 import { ContainerExt } from '../extensions/ContainerExt.ts'
@@ -39,6 +39,7 @@ import { FigureExt } from '../extensions/FigureExt.ts'
 import { FigcaptionExt } from '../extensions/FigcaptionExt.ts'
 import { PasteExt } from '../extensions/PasteExt.ts'
 import { ClassNameExt } from '../extensions/ClassNameExt.ts'
+import { AiEditorOptions } from './types.ts'
 
 export const getExtensions = (editor: AiEditor, options: AiEditorOptions): Extensions => {
   // the Collaboration extension comes with its own history handling
@@ -95,8 +96,8 @@ export const getExtensions = (editor: AiEditor, options: AiEditorOptions): Exten
       TableCell,
       typeof options.textCounter === 'function'
         ? CharacterCount.configure({
-            textCounter: options.textCounter
-          })
+          textCounter: options.textCounter
+        })
         : CharacterCount,
       Link.configure({
         openOnClick: false,

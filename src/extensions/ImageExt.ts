@@ -7,8 +7,8 @@ import { TextSelection } from 'prosemirror-state'
 import { uuid } from '../util/uuid.ts'
 import { createMediaDecoration } from '../util/decorations.ts'
 import { getUploader } from '../util/getUploader.ts'
-import { Uploader, UploaderEvent } from '../core/AiEditor.ts'
 import { getWidthUnit } from '../util/getWidthUnit.ts'
+import { Uploader, UploaderEvent } from '../core/types.ts'
 
 declare module '@tiptap/core' {
   interface Commands<ReturnType> {

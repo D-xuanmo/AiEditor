@@ -1,7 +1,7 @@
 import { AbstractDropdownMenuButton } from '../AbstractDropdownMenuButton.ts'
 import { Editor, EditorEvents } from '@tiptap/core'
-import { AiEditorOptions, NameAndValue } from '../../core/AiEditor.ts'
 import { t } from 'i18next'
+import { AiEditorOptions, NameAndValue } from '../../core/types.ts'
 
 const fontFamilies: NameAndValue[] = [
   { name: '宋体', value: 'SimSun' },

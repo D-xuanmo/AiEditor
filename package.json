@@ -3,11 +3,12 @@
   "author": "D-xuanmo",
   "version": "0.0.1",
   "type": "module",
-  "keywords": [
-    "editor",
-    "ai",
-    "ai editor"
-  ],
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prettier": "prettier --write src"
+  },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -27,12 +28,6 @@
     "LICENSE",
     "README.md"
   ],
-  "scripts": {
-    "dev": "vite --host",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "prettier": "prettier --write src"
-  },
   "dependencies": {
     "@tiptap/core": "^2.10.1",
     "@tiptap/extension-bubble-menu": "^2.10.1",
@@ -91,5 +86,9 @@
   "homepage": "https://github.com/D-xuanmo#readme",
   "license": "LGPL",
   "prettier": "@xuanmo/prettier-config",
-  "private": false
+  "keywords": [
+    "editor",
+    "ai",
+    "ai editor"
+  ]
 }

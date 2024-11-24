@@ -1,4 +1,3 @@
-import { AiEditorOptions, AiEditorEventListener } from '../core/AiEditor.ts'
 import { EditorEvents } from '@tiptap/core'
 import { Undo } from './menus/Undo'
 import { AbstractMenuButton } from './AbstractMenuButton.ts'
@@ -45,6 +44,7 @@ import { defineCustomElement } from '../commons/defineCustomElement.ts'
 import { Group } from './menus/Group.ts'
 import { initToolbarKeys } from '../util/initToolbarKeys.ts'
 import { defaultToolbarKeys } from './DefaultToolbarKeys.ts'
+import { AiEditorEventListener, AiEditorOptions } from '../core/types.ts'
 
 defineCustomElement('aie-undo', Undo)
 defineCustomElement('aie-undo', Undo)

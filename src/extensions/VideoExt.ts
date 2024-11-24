@@ -5,7 +5,7 @@ import { uuid } from '../util/uuid.ts'
 import { DecorationSet } from 'prosemirror-view'
 import { createMediaDecoration } from '../util/decorations.ts'
 import { getUploader } from '../util/getUploader.ts'
-import { Uploader, UploaderEvent } from '../core/AiEditor.ts'
+import { Uploader, UploaderEvent } from '../core/types.ts'
 
 export interface VideoOptions {
   HTMLAttributes: Record<string, any>
@@ -96,12 +96,12 @@ export const VideoExt = Node.create<VideoOptions>({
     return {
       setVideo:
         (src: string) =>
-        ({ commands }) =>
-          commands.insertContent(`<video controls="true" style="width: 100%" src="${src}" />`),
+          ({ commands }) =>
+            commands.insertContent(`<video controls="true" style="width: 100%" src="${src}" />`),
       toggleVideo:
         () =>
-        ({ commands }) =>
-          commands.toggleNode(this.name, 'paragraph'),
+          ({ commands }) =>
+            commands.toggleNode(this.name, 'paragraph'),
       uploadVideo: (file: File) => () => {
         const headers =
           typeof this.options.uploadHeaders === 'object'

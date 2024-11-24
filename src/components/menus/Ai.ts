@@ -1,10 +1,10 @@
 import { AbstractDropdownMenuButton } from '../AbstractDropdownMenuButton.ts'
 import { Editor, EditorEvents } from '@tiptap/core'
-import { AiEditorOptions } from '../../core/AiEditor.ts'
 import { AiModelManager } from '../../ai/AiModelManager.ts'
 import { AiMenu } from '../../ai/AiGlobalConfig.ts'
 import { DefaultAiMessageListener } from '../../ai/core/DefaultAiMessageListener.ts'
 import { t } from 'i18next'
+import { AiEditorOptions } from '../../core/types.ts'
 
 export const dafaultAiMenus: AiMenu[] = [
   {

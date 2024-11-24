@@ -1,7 +1,7 @@
 import { EditorEvents } from '@tiptap/core'
-import { AiEditorOptions } from '../../core/AiEditor.ts'
 import { AbstractMenuButton } from '../AbstractMenuButton.ts'
 import tippy, { Instance } from 'tippy.js'
+import { AiEditorOptions } from '../../core/types.ts'
 
 const defaultEmojis = [
   '😀',
@@ -186,10 +186,10 @@ export class Emoji extends AbstractMenuButton {
     div.innerHTML = `
             <div class="emoji-cells">
             ${this.emojis
-              .map((emoji) => {
-                return `<div  class="emoji-cell"><span>${emoji}</span></div>`
-              })
-              .join('')}
+      .map((emoji) => {
+        return `<div  class="emoji-cell"><span>${emoji}</span></div>`
+      })
+      .join('')}
             </div>
         `
 

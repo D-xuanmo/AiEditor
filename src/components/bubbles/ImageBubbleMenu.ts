@@ -1,7 +1,7 @@
 import { AbstractBubbleMenu } from '../AbstractBubbleMenu.ts'
 import { EditorEvents } from '@tiptap/core'
-import { AiEditorOptions } from '../../core/AiEditor.ts'
 import { AllImageMenuItems } from './items/image/AllImageMenuItems.ts'
+import { AiEditorOptions } from '../../core/types.ts'
 
 export class ImageBubbleMenu extends AbstractBubbleMenu {
   constructor() {

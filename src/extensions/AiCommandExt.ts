@@ -4,9 +4,9 @@ import Suggestion, { SuggestionOptions, SuggestionProps } from '@tiptap/suggesti
 
 import tippy, { Instance } from 'tippy.js'
 import { AiModelManager } from '../ai/AiModelManager.ts'
-import { AiEditorOptions } from '../core/AiEditor.ts'
 import { DefaultAiMessageListener } from '../ai/core/DefaultAiMessageListener.ts'
 import { AiMenu } from '../ai/AiGlobalConfig.ts'
+import { AiEditorOptions } from '../core/types.ts'
 
 export type AiCommandOptions = {
   HTMLAttributes?: Record<string, any>
@@ -155,10 +155,10 @@ export const AiCommandExt = Extension.create<AiCommandOptions>({
                                 </div>
                                 <hr/>
                                 ${suggestionProps.items
-                                  .map((item, index) => {
-                                    return `<div class="ai-command-container-item item ${selectIndex === 12 + index ? 'active' : ''}" data-index="${12 + index}">${item.icon} ${item.name}</div>`
-                                  })
-                                  .join('')}
+              .map((item, index) => {
+                return `<div class="ai-command-container-item item ${selectIndex === 12 + index ? 'active' : ''}" data-index="${12 + index}">${item.icon} ${item.name}</div>`
+              })
+              .join('')}
                             </div>
                             `
             element.addEventListener('click', (e) => {

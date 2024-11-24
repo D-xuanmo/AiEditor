@@ -1,7 +1,7 @@
 import { Editor, EditorEvents } from '@tiptap/core'
 import { AbstractDropdownMenuButton } from '../AbstractDropdownMenuButton.ts'
-import { AiEditorOptions, NameAndValue } from '../../core/AiEditor.ts'
 import { t } from 'i18next'
+import { AiEditorOptions, NameAndValue } from '../../core/types.ts'
 
 const fontSizes: NameAndValue[] = [
   { name: '9', value: 9 },

@@ -18,8 +18,8 @@ declare class AbstractMenuButton extends HTMLElement implements AiEditorEventLis
     protected registerClickListener(): void;
     connectedCallback(): void;
     onClick(commands: ChainedCommands): void;
-    onCreate(props: EditorEvents["create"], options: AiEditorOptions): void;
-    onTransaction(event: EditorEvents["transaction"]): void;
+    onCreate(props: EditorEvents['create'], options: AiEditorOptions): void;
+    onTransaction(event: EditorEvents['transaction']): void;
     onActive(editor: Editor): boolean;
     onEditableChange(editable: boolean): void;
 }
@@ -103,7 +103,7 @@ export declare type AiEditorOptions = {
     editable?: boolean;
     i18n?: Record<string, Record<string, string>>;
     placeholder?: string;
-    theme?: "light" | "dark";
+    theme?: 'light' | 'dark';
     onMentionQuery?: (query: string) => any[] | Promise<any[]>;
     onCreateBefore?: (editor: AiEditor, extensions: Extensions) => void | Extensions;
     onCreated?: (editor: AiEditor) => void;
@@ -211,7 +211,7 @@ export declare interface AiMenu {
     icon: string;
     name: string;
     prompt?: string;
-    text?: "selected" | "focusBefore";
+    text?: 'selected' | 'focusBefore';
     model?: string;
     children?: AiMenu[];
 }
@@ -290,7 +290,7 @@ export declare interface CustomAiModelConfig extends AiModelConfig {
     headers?: () => Record<string, any> | undefined;
     wrapPayload: (prompt: string) => string;
     parseMessage: (bodyString: string) => AiMessage | undefined;
-    protocol: "sse" | "websocket" | "http";
+    protocol: 'sse' | 'websocket' | 'http';
 }
 
 export declare interface CustomMenu {
@@ -313,8 +313,8 @@ declare class Footer extends HTMLElement implements AiEditorEventListener {
     constructor();
     initDraggable(draggable?: boolean): void;
     updateCharacters(): void;
-    onCreate(props: EditorEvents["create"], _: AiEditorOptions): void;
-    onTransaction(props: EditorEvents["transaction"]): void;
+    onCreate(props: EditorEvents['create'], _: AiEditorOptions): void;
+    onTransaction(props: EditorEvents['transaction']): void;
     onEditableChange(editable: boolean): void;
 }
 
@@ -322,8 +322,8 @@ declare class Header extends HTMLElement implements AiEditorEventListener {
     menuButtons: AbstractMenuButton[];
     constructor();
     connectedCallback(): void;
-    onCreate(event: EditorEvents["create"], options: AiEditorOptions): void;
-    onTransaction(event: EditorEvents["transaction"]): void;
+    onCreate(event: EditorEvents['create'], options: AiEditorOptions): void;
+    onTransaction(event: EditorEvents['transaction']): void;
     onEditableChange(editable: boolean): void;
 }
 
@@ -417,3 +417,131 @@ export declare interface WenXinAiModelConfig extends AiModelConfig {
 }
 
 export { }
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        attachment: {
+            uploadAttachment: (file: File) => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        painter: {
+            setPainter: (marks: Mark[]) => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        fontSize: {
+            /**
+             * Set the font family
+             */
+            setFontSize: (fontFamily: string) => ReturnType;
+            /**
+             * Unset the font family
+             */
+            unsetFontSize: () => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        lineHeight: {
+            /**
+             * Set the line height attribute
+             */
+            setLineHeight: (height: string) => ReturnType;
+            /**
+             * Unset the text align attribute
+             */
+            unsetLineHeight: () => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        indent: {
+            indent: () => ReturnType;
+            outdent: () => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        Image: {
+            uploadImage: (file: File) => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        CodeBlockExt: {
+            /**
+             * add comments
+             */
+            addCodeComments: (node: Node, pos: number) => ReturnType;
+            /**
+             * add explain
+             */
+            addCodeExplain: (node: Node, pos: number) => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        video: {
+            setVideo: (src: string) => ReturnType;
+            toggleVideo: (src: string) => ReturnType;
+            uploadVideo: (file: File) => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        iframe: {
+            setIframe: (options: {
+                src: string;
+            }) => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        container: {
+            setContainer: (type: string) => ReturnType;
+            toggleContainer: (type: string) => ReturnType;
+            unsetContainer: () => ReturnType;
+        };
+    }
+}
+
+
+declare module '@tiptap/core' {
+    interface Commands<ReturnType> {
+        className: {
+            setClassName: (nodeType: string, className: string) => ReturnType;
+        };
+    }
+}
+
