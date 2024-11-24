@@ -1,7 +1,7 @@
 {
-  "name": "aieditor",
-  "author": "yangfuhai",
-  "version": "1.2.7",
+  "name": "@xuanmo/aieditor",
+  "author": "D-xuanmo",
+  "version": "0.0.1",
   "type": "module",
   "keywords": [
     "editor",
@@ -86,12 +86,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aieditor-team/aieditor"
+    "url": "https://github.com/D-xuanmo"
   },
-  "bugs": {
-    "url": "https://github.com/aieditor-team/aieditor/issues"
-  },
-  "homepage": "https://github.com/aieditor-team/aieditor#readme",
+  "homepage": "https://github.com/D-xuanmo#readme",
   "license": "LGPL",
-  "prettier": "@xuanmo/prettier-config"
+  "prettier": "@xuanmo/prettier-config",
+  "private": false
 }
